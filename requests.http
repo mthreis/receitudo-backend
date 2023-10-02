@@ -1,0 +1,13 @@
+
+GET http://localhost:4007/users
+
+
+###
+
+GET http://localhost:4007/recipes
+
+
+###
+
+GET http://localhost:4007/recipes/3
+
