@@ -1,8 +1,8 @@
 
-const pg = require("pg");
+const Pool = require("pg").Pool;
 
 require("dotenv").config();
 
-const client = new pg.Client(process.env.DB_URI);
+const pool = new Pool({ connectionString: process.env.DB_URI });
 
-module.exports = client;
+module.exports = pool;
