@@ -9,5 +9,78 @@ GET http://localhost:4007/recipes
 
 ###
 
-GET http://localhost:4007/recipes/3
+GET http://localhost:4007/recipes/23
 
+
+###
+
+POST http://localhost:4007/recipes
+Content-Type: application/json
+
+{
+    "name": "Spaghetti",
+    "creatorID": 1,
+    "prepTime" : 55,
+    "difficulty" : "Medium",
+
+    "steps": [
+        "Faça isso",
+        "Agora aquilo ali",
+        "E depois isso, óbvio"
+    ],
+
+    "ingredients": [
+        "Colher de pau",
+        "400g de macarrão linguine"
+    ]
+}
+
+###
+
+POST http://localhost:4007/recipes
+Content-Type: application/json
+
+{
+    "name": "Rice and Beans",
+    "creatorID": 1,
+    "prepTime" : 55,
+    "difficulty" : "Medium",
+
+    "steps": [
+        "Faça isso",
+        "Agora aquilo ali",
+        "E depois isso, óbvio"
+    ],
+
+    "ingredients": [
+        "Colher de pau",
+        "400g de macarrão linguine"
+    ]
+}
+
+
+###
+
+PATCH http://localhost:4007/recipes/23
+Content-Type: application/json
+
+{
+    "key": "name",
+    "value": "McNuggets"
+}
+
+
+###
+
+PATCH http://localhost:4007/recipes/23
+Content-Type: application/json
+
+{
+    "key": "name",
+    "value": "Fried Tuna With Tomatoes"
+}
+
+
+###
+
+DELETE http://localhost:4007/recipes/9
