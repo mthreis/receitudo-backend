@@ -7,8 +7,8 @@ router.get("/", (req, res) => {
 
     pool.query(query, (err, results) => {
         if (err) {
-            res.status(500).send(err);
-            throw err;
+            return res.status(500).send(err);
+            //throw err;
         }
 
         res.status(200).send(results.rows);

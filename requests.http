@@ -4,6 +4,13 @@ GET http://localhost:4007/users
 
 ###
 
+
+GET https://receitudo-backend.onrender.com/users
+
+
+
+###
+
 GET http://localhost:4007/recipes
 
 
