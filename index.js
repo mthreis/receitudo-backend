@@ -6,7 +6,7 @@ const db = require("./db");
 db.connect();
 
 app.use(express.json());
-app.use(express.static("build"));
+app.use("/page", express.static("build"));
 
 app.use("/recipes", require("./routes/recipes"));
 app.use("/users", require("./routes/users"));
