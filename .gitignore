@@ -5,3 +5,5 @@ node_modules/
 localhost.session.sql
 
 .env
+
+utils/

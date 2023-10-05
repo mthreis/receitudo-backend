@@ -11,4 +11,4 @@ app.use("/recipes", require("./routes/recipes"));
 app.use("/users", require("./routes/users"));
 
 
-app.listen(4007, () => console.log("olé"));
+app.listen(process.env.PORT, () => console.log("olé"));
