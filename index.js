@@ -8,6 +8,8 @@ db.connect();
 app.use(express.json());
 app.use(express.static("build"));
 
+console.log("random");
+
 app.use("/recipes", require("./routes/recipes"));
 app.use("/users", require("./routes/users"));
 
