@@ -4,8 +4,19 @@ GET http://localhost:4007/users
 
 ###
 
+GET http://localhost:4007/users/test
+
+
+###
+
 
 GET https://receitudo-backend.onrender.com/users
+
+
+###
+
+
+GET https://receitudo-backend.onrender.com/users/test
 
 
 
