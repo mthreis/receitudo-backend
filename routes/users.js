@@ -20,4 +20,11 @@ router.get("/test", (req, res) => {
     res.json({message: "ok"});
 });
 
+
+router.get("/slash/dot", (req, res) => {
+
+    res.json({message: "slashDot"});
+});
+
+
 module.exports = router;

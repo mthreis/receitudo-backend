@@ -19,6 +19,12 @@ GET https://receitudo-backend.onrender.com/users
 GET https://receitudo-backend.onrender.com/users/test
 
 
+###
+
+
+GET https://receitudo-backend.onrender.com/recipes/23
+
+
 
 ###
 
